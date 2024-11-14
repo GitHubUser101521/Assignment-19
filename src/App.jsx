@@ -3,6 +3,7 @@ import Q1 from './Q1.jsx'
 import Q2 from './Q2.jsx'
 import Q3 from './Q3.jsx'
 import Q4 from './Q4.jsx'
+import Q5 from './Q5.jsx'
 
 export default function App() {
    const contactsObj = {
@@ -32,6 +33,12 @@ export default function App() {
     { name: 'Vacuum', price: 100 }
   ];
 
+  const productStock = [
+    { name: 'Product A', inStock: true },
+    { name: 'Product B', inStock: false },
+    { name: 'Product C', inStock: true }
+  ];
+
   return (
     <div>
       <Q1 name="Cherryl Callista Cheniago" age={15} isStudent={true} hobbies={['Watch youtube content', 'Badminton', 'Code']} contacts={contactsObj}/>
@@ -41,6 +48,8 @@ export default function App() {
       <Q3 {...handleClickObj}/>
 
       <Q4 products={products}/>
+
+      <Q5 products={productStock}/>
     </div>
   )
 }

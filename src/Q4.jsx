@@ -12,9 +12,13 @@ function ProductList({ products }) {
   });
 
   return (
-    <ul>
-      {productListItems}
-    </ul>
+    <>
+        <ul>
+        {productListItems}
+        </ul>
+
+        <br /><hr />
+    </>
   );
 }
 
